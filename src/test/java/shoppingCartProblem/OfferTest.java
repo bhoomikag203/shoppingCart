@@ -10,30 +10,35 @@ public class OfferTest {
     @Test
     public void shouldOfferFivePercentDiscount() throws Exception {
         Offer offer = new Offer();
+        Cart cart = new Cart();
         Apple apple = new Apple("apple", 10, 2);
         Milk milk = new Milk("milk", 20, 10);
-        offer.cart.addItem(apple);
-        offer.cart.addItem(milk);
-        double finalAmount = offer.fivePercentDiscount();
+        cart.addItem(apple);
+        cart.addItem(milk);
+        cart.computeTotalPrice();
 
-        Assert.assertEquals(finalAmount, 209.0);
+        double discountAmount = offer.fivePercentDiscount(cart);
+
+        Assert.assertEquals(discountAmount, 11.0);
     }
 
     @Test
     public void shouldExtractOfferPriceForBuyTwoMilkGetOneFree() throws Exception {
         Offer offer = new Offer();
-        Apple apple = new Apple("apple", 10, 2);
-        Milk milk = new Milk("milk", 20, 13);
+        Cart cart = new Cart();
+        Apple apple = new Apple("apple", 100, 2);
+        Milk milk = new Milk("milk", 20, 1);
         NewsPaper newsPaper = new NewsPaper("Vijaya Karnataka", 5, 2);
-        offer.cart.addItem(apple);
-        offer.cart.addItem(milk);
-        offer.cart.addItem(newsPaper);
+        cart.addItem(apple);
+        cart.addItem(milk);
+        cart.addItem(newsPaper);
 
-        System.out.println("Bill amount before offer " + offer.cart.computeTotalPrice());
-        System.out.println("Bill amount after 5% discount " + offer.fivePercentDiscount());
-        System.out.println("Bill amount for buy 2 milk get 1 free " + offer.extractOfferPriceForBuyTwoMilkGetOneFree());
 
-        Assert.assertEquals(offer.extractOfferPriceForBuyTwoMilkGetOneFree(), 155.5);
+        System.out.println("Bill amount before offer " + cart.computeTotalPrice());
+        System.out.println("5% discount of bill " + offer.fivePercentDiscount(cart));
+        System.out.println("Bill amount for buy 2 milk get 1 free " + offer.extractOfferPriceForBuyTwoMilkGetOneFree(cart));
+
+        Assert.assertEquals(offer.extractOfferPriceForBuyTwoMilkGetOneFree(cart), 0.0);
     }
 
 }

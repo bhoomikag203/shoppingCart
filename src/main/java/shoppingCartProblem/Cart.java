@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Cart {
     List<Item> items = new ArrayList<>();
-    int noOfItems;
+    double totalPrice;
 
     public void addItem(Item item) {
         items.add(item);
@@ -16,14 +16,14 @@ public class Cart {
     }
 
     public double computeTotalPrice() {
-        double totalPrice = 0.0;
         for (Item item : items) {
-             totalPrice = totalPrice + item.getPrice() * item.getQuantity();
+            totalPrice += item.getPrice() * item.getQuantity();
         }
         return totalPrice;
     }
 
     public int totalItemCount() {
+        int noOfItems = 0;
         for (Item item : items) {
             noOfItems += item.getQuantity();
         }

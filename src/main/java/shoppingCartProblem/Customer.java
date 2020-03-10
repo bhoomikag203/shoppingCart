@@ -5,6 +5,8 @@ public class Customer {
     Cart cart;
     CreditCard creditCard;
     EWallet eWallet;
+    Offer offer = new Offer();
+    Checkout checkout = new Checkout();
 
     public Customer(String name, Cart cart, CreditCard creditCard, EWallet eWallet) {
         this.name = name;
@@ -14,7 +16,8 @@ public class Customer {
     }
 
     public void selectPaymentMode(PaymentMode paymentMode) throws Exception {
-        double totalPrice = cart.computeTotalPrice();
+        double totalPrice = checkout.getGrandTotalPrice(offer,cart);
+        System.out.println(totalPrice);
         switch (paymentMode) {
             case E_WALLET:
                 if (eWallet.balanceAmount < totalPrice) {
