@@ -9,22 +9,26 @@ public class Offer {
         double totalPrice = cart.computeTotalPrice();
         if (totalPrice >= 100) {
             double discountAmount = totalPrice * 0.05;
-            return totalPrice - discountAmount;
+            totalPrice -= discountAmount;
+            return totalPrice;
         } else {
             return totalPrice;
         }
     }
 
-    public void buyTwoMilkGetOneFree() {
+    public double extractOfferPriceForBuyTwoMilkGetOneFree() {
+        double totalPrice = fivePercentDiscount();
         int milkCount = 0;
+        double milkPrice = 0;
         List<Item> items = cart.items;
         for (Item item : items) {
             if (item instanceof Milk) {
                 milkCount += item.getQuantity();
+                milkPrice = item.getPrice();
             }
         }
-        int addExtraMilk = milkCount / 2;
-        Milk milk = new Milk("milk", 10.0, addExtraMilk);
-        cart.addItem(milk);
+        milkCount /= 2;
+        totalPrice -= milkPrice * milkCount;
+        return totalPrice;
     }
 }
