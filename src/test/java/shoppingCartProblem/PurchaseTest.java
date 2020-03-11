@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class CustomerTest {
+public class ParchaseTest {
     @Test
     public void shouldSelectPaymentMode() throws Exception {
         Offer offer = new Offer();
