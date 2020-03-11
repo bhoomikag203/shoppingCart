@@ -2,6 +2,7 @@ package shoppingCartProblem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Cart {
     List<Item> items = new ArrayList<>();
@@ -31,7 +32,8 @@ public class Cart {
     }
 
     public void emptyCart(){
-        items.removeIf(item -> item instanceof Item);
+//        items.removeIf(item -> item instanceof Item);
+        items.removeIf(Objects::nonNull);
     }
 
 }

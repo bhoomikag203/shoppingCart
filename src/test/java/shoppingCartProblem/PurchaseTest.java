@@ -1,19 +1,16 @@
 package shoppingCartProblem;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class PurchaseTest {
     @BeforeTest
     public Cart initializeCart() {
         Cart cart = new Cart();
-        Apple apple = new Apple("apple", 10, 10);
-        NewsPaper newsPaper = new NewsPaper("newspaper", (float) 10, 3);
-        Milk milk = new Milk("milk", 20, 1);
+        Apple apple = new Apple("apple", 10, 1);
+        NewsPaper newsPaper = new NewsPaper("newspaper", (float) 10, 2);
+        Milk milk = new Milk("milk", 20, 4);
         cart.addItem(apple);
         cart.addItem(newsPaper);
         cart.addItem(milk);
@@ -24,18 +21,18 @@ public class PurchaseTest {
     public void shouldPurchase() throws Exception {
         Offer offer = new Offer();
         Cart cart = initializeCart();
-        double totalPriceBeforeOffer = cart.computeTotalPrice();
-        System.out.println("bill amount before offer = " + totalPriceBeforeOffer);
+        System.out.println("bill amount before offer = " + cart.computeTotalPrice());
+//        System.out.println("5% discount = "+ offer.fivePercentDiscount(cart));
+//        System.out.println("Buy 2 get 1 offer  = "+ offer.extractOfferPriceAfterBuyTwoMilkGetOneFreeOffer(cart));
 
         Checkout checkout = new Checkout();
         System.out.println("bill amount after offer =  " + checkout.getGrandTotalPrice(offer, cart));
-
 
         CreditCard creditCard = new CreditCard(0);
 //        creditCard.addAmount(200);
 
         EWallet eWallet = new EWallet(0);
-        eWallet.addAmount(1000);
+        eWallet.addAmount(200);
         Customer customer = new Customer("ABC", cart, creditCard, eWallet);
 
         System.out.println("Credit card balance before purchasing items = " + eWallet.balanceAmount);
