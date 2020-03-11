@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ead847f4-7b42-495e-a0f4-52110de65aac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/shoppingCartProblem/CustomerTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/shoppingCartProblem/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingCartProblem/PurchaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Checkout.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Checkout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/CreditCard.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/CreditCard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Customer$1.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Customer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Customer.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/Customer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/EWallet.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/EWallet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/PaymentService.class" afterPath="$PROJECT_DIR$/out/production/classes/shoppingCartProblem/PaymentService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shoppingCartProblem/CreditCardTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shoppingCartProblem/CreditCardTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/classes/shoppingCartProblem/EWalletTest.class" afterPath="$PROJECT_DIR$/out/test/classes/shoppingCartProblem/EWalletTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Cart.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Cart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Checkout.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Checkout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/CreditCard.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/CreditCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/EWallet.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/EWallet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Offer.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/Offer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/PaymentService.java" afterPath="$PROJECT_DIR$/src/main/java/shoppingCartProblem/PaymentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/shoppingCartProblem/OfferTest.java" afterPath="$PROJECT_DIR$/src/test/java/shoppingCartProblem/OfferTest.java" />
-    </list>
+    <list default="true" id="ead847f4-7b42-495e-a0f4-52110de65aac" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -107,8 +87,8 @@
       <file leaf-file-name="PurchaseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/shoppingCartProblem/PurchaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="338">
+              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -867,9 +847,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PurchaseTest_shouldSelectPaymentMode - 2020.03.11 at 11h 46m 55s.xml">
-      <configuration name="PurchaseTest.shouldSelectPaymentMode" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PurchaseTest_shouldSelectPaymentMode - 2020.03.11 at 11h 47m 37s.xml">
       <configuration name="PurchaseTest.shouldSelectPaymentMode" configurationId="TestNG" />
     </history-entry>
@@ -895,6 +872,9 @@
       <configuration name="PurchaseTest.shouldSelectPaymentMode" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PurchaseTest_shouldSelectPaymentMode - 2020.03.11 at 12h 07m 51s.xml">
+      <configuration name="PurchaseTest.shouldSelectPaymentMode" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PurchaseTest_shouldSelectPaymentMode - 2020.03.11 at 12h 11m 01s.xml">
       <configuration name="PurchaseTest.shouldSelectPaymentMode" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -985,8 +965,8 @@
         <state relative-caret-position="45">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#164#165#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -996,8 +976,8 @@
         <state relative-caret-position="45">
           <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="false" />
+            <element signature="e#173#174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1093,8 +1073,8 @@
         <state relative-caret-position="45">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#164#165#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1195,8 +1175,8 @@
         <state relative-caret-position="45">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="false" />
+            <element signature="e#164#165#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1206,8 +1186,8 @@
         <state relative-caret-position="45">
           <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="false" />
+            <element signature="e#173#174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1245,14 +1225,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingCartProblem/CreditCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1312,10 +1284,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shoppingCartProblem/CreditCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shoppingCartProblem/PurchaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        <state relative-caret-position="338">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
