@@ -30,4 +30,8 @@ public class Cart {
         return noOfItems;
     }
 
+    public void emptyCart(){
+        items.removeIf(item -> item instanceof Item);
+    }
+
 }

@@ -17,28 +17,18 @@ public class OfferTest {
         cart.addItem(milk);
         cart.computeTotalPrice();
 
-        double discountAmount = offer.fivePercentDiscount(cart);
-
-        Assert.assertEquals(discountAmount, 11.0);
+        Assert.assertEquals(offer.fivePercentDiscount(cart), 11.0);
     }
 
     @Test
-    public void shouldExtractOfferPriceForBuyTwoMilkGetOneFree() throws Exception {
+    public void shouldBeAbleToGetDiscountAmountAfterBuyTwoGetOne() throws Exception {
         Offer offer = new Offer();
         Cart cart = new Cart();
         Apple apple = new Apple("apple", 100, 2);
-        Milk milk = new Milk("milk", 20, 1);
-        NewsPaper newsPaper = new NewsPaper("Vijaya Karnataka", 5, 2);
+        Milk milk = new Milk("milk", 20, 7);
         cart.addItem(apple);
         cart.addItem(milk);
-        cart.addItem(newsPaper);
-
-
-        System.out.println("Bill amount before offer " + cart.computeTotalPrice());
-        System.out.println("5% discount of bill " + offer.fivePercentDiscount(cart));
-        System.out.println("Bill amount for buy 2 milk get 1 free " + offer.extractOfferPriceForBuyTwoMilkGetOneFree(cart));
-
-        Assert.assertEquals(offer.extractOfferPriceForBuyTwoMilkGetOneFree(cart), 0.0);
+        Assert.assertEquals(offer.extractOfferPriceAfterBuyTwoMilkGetOneFreeOffer(cart), 60.0);
     }
 
 }

@@ -16,21 +16,19 @@ public class Customer {
     }
 
     public void selectPaymentMode(PaymentMode paymentMode) throws Exception {
-        double totalPrice = checkout.getGrandTotalPrice(offer,cart);
-        System.out.println(totalPrice);
         switch (paymentMode) {
             case E_WALLET:
-                if (eWallet.balanceAmount < totalPrice) {
+                if (eWallet.balanceAmount < cart.totalPrice) {
                     throw new Exception("Low balance! Add money to wallet");
                 } else {
-                    eWallet.deductAmount(totalPrice);
+                    eWallet.deductAmount(cart.totalPrice);
                 }
                 break;
             case CREDIT_CARD:
-                if (creditCard.balanceAmount < totalPrice) {
+                if (creditCard.balanceAmount < cart.totalPrice) {
                     throw new Exception("Low balance! Add money to wallet");
                 } else
-                    creditCard.deductAmount(totalPrice);
+                    creditCard.deductAmount(cart.totalPrice);
                 break;
             default:
                 throw new Exception("Unable to select payment mode");

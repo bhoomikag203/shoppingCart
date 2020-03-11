@@ -26,7 +26,7 @@ public class Offer {
         return 0;
     }
 
-    public double extractOfferPriceForBuyTwoMilkGetOneFree(Cart cart) {
+    public double extractOfferPriceAfterBuyTwoMilkGetOneFreeOffer(Cart cart) {
         // // totalPrice = fivePercentDiscount(cart);
 //        totalPrice = cart.totalPrice;
 //        int milkCount = 0;
@@ -53,12 +53,8 @@ public class Offer {
                 milkPrice = item.getPrice();
             }
         }
-        if(milkCount == 0){
-            return 0;
-        }else{
-            milkCount /= 2;
-            discountAmount = milkPrice * milkCount;
-        }
+        milkCount /= 2;
+        discountAmount = milkPrice * milkCount;
         return discountAmount;
     }
 }

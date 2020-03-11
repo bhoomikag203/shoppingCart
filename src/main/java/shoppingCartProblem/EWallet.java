@@ -9,13 +9,15 @@ public class EWallet implements PaymentService {
     }
 
     @Override
-    public void addAmount(double amount) {
+    public double addAmount(double amount) {
         balanceAmount += amount;
+        return balanceAmount;
     }
 
     @Override
-    public void deductAmount(double amount) {
+    public double deductAmount(double amount) {
         balanceAmount -= amount;
+        return balanceAmount;
     }
 }
 
